@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Repo Bookmarks</title>
+  <script src="popup.js" defer></script>
+  <link href="output.css" rel="stylesheet">
+</head>
+
+<body class="p-4 min-w-[300px] text-sm flex flex-col">
+  <div class="flex-grow">
+    <h1 class="text-lg font-bold mb-2">Bookmarked Repos</h1>
+    <input id="search" type="text" placeholder="Search repos..." class="w-full p-2 mb-3 border rounded" />
+    <div id="results" class="space-y-2 max-h-[400px] overflow-y-scroll"></div>
+    <button id="add-repo" class="mt-4 p-2 w-full bg-blue-600 text-white rounded hover:bg-blue-700 hidden">
+      + Add Current Repo
+    </button>
+  </div>
+</body>
+
+</html>
